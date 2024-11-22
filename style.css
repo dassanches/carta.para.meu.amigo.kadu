@@ -1,0 +1,114 @@
+:root {
+  --cor-de-fundo: #1E201E;
+  --cor-da-fonte: #ECDFCC;
+  --cor-rodape: #697565;
+  --cor-hover: #88AB8E;
+}
+
+html, body {
+  height: 100%; /* Garante que a altura total seja considerada */
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Organiza o layout em colunas */
+  background-color: var(--cor-de-fundo);
+  color: var(--cor-da-fonte);
+  font-family: Arial, sans-serif;
+}
+
+.pagina {
+  flex: 1; /* Faz com que o conteúdo ocupe todo o espaço disponível */
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--cor-rodape);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.link__proxima__pagina {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: var(--cor-da-fonte);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cabecalho {
+  border: 2px solid;
+  border-radius: 5%;
+  width: 500px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+
+.conteudo__texto {
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.botao__fotos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 50px;
+  border: 2px solid var(--cor-da-fonte);
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 auto 20px auto; /* Adiciona margem inferior de 20px */
+}
+
+.album__fotos {
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--cor-da-fonte);
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
+}
+
+.album__fotos:hover {
+  background-color: var(--cor-hover);
+  color: #493628;
+}
+
+.album {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  justify-items: center;
+  border: 4px solid var(--cor-da-fonte);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.album img {
+  width: 200px;
+  height: 200px; /* Tamanho fixo para as imagens */
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.rodape a {
+  text-decoration: none;
+  color: var(--cor-da-fonte);
+  font-size: 20px;
+  margin-top: 2%;
+}
+
+.rodape {
+  padding: 5px 10px; /* Diminuir espaçamento interno */
+  color: var(--cor-da-fonte);
+  background-color: var(--cor-rodape);
+  text-align: center;
+  font-size: 16px; /* Reduzindo o tamanho da fonte */
+  margin-top: auto; /* Garante que fique no final */
+  text-decoration: none;
+}
